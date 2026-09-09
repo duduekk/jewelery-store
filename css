@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/doxent');
+
+body{
+    display: flex;
+    background: linear-gradient(
+       #424141,#262627,#0c0b14
+    );
+    font-family: "Jersey 15", sans-serif;               
+    margin-left: 100px;   
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    width: 150px;
+    height: 100vh;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#0f0f0f,#313131);
+    border: solid 1px #555;
+    z-index: 1000;
+}
+.navbar ul {
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "DOXENT", sans-serif;
+}
+
+.navbar ul a:hover{
+    background-color: hsl(180, 1%, 15%);
+    transition: all 0.3s ease;
+}
+
+
+hr{
+    border:#413d3d;
+    background-color:#413d3d;
+    width:120px;
+    height:0.5px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+
+.search-input{
+    position: relative;
+    top: 24px;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    padding:12px 50px 12px 20px;
+    border-radius: 25px;
+    border: 2px solid #555;
+    background-color: #333;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+#login{
+    position: relative;
+    left: 78%;
+    width:100px;
+    padding:12px 50px 12px 20px;
+    border-radius:25px;
+    border: 2px solid #555;
+    background-color: #333;
+    font-size: 1.1rem;
+    color: white;
+}
+
+#register{
+    position: relative;
+    left: 78%;
+    width:100px;
+    padding:12px 50px 12px 15px;
+    border-radius:25px;
+    border: 2px solid #555;
+    background-color: #333;
+    font-size: 1.1rem;
+    color: white;
+}
+
+#login:hover{
+    background-color: #141414;
+    transition: all 0.3s ease;
+}
+
+
+#register:hover{
+    background-color: #141414;
+    transition: all 0.3s ease;
+}
+
+
+#bestsales{
+    position: fixed;
+    top:47%;
+    left:53.5%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: "DOXENT", sans-serif;
+    color: #ffffff;
+}
+
+#headerbox{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left:80px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+
+
+.header{
+
+    position:relative;
+
+
+    color: #ffffff;
+    border: solid 3px black;
+    width: 1000px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    background-image: url(../zdjecia/bizuteria1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#name1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    margin: 0;
+    font-family: "DOXENT", sans-serif;
+    font-size: 100px;
+    color: #ffffff;
+    font:0 0 4px;
+}
+
+#name2{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    margin: 0;
+    font-family: "DOXENT", sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#ring1{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 250px;
+    height: 250px;
+
+}
+
+#ring2{
+
+    position: absolute;
+
+    height:10px;
+
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+
+    font-family: "DOXENT", sans-serif; 
+    text-align: center;
+    font-size: 16px;
+}
+
+.aside{
+
+    position:relative;
+
+    border: solid 3px black;
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    margin-right: 180px;
+    background: linear-gradient(
+       #494646,#262627
+    );
+    transition: transform 0.2s ease-in-out;
+}
+
+#ring1price{
+    position: absolute;
+
+    margin-left: 49%;
+    transform: translate(-50%, -50%);
+    
+
+
+    font-family: "DOXENT", sans-serif; 
+    color: white;
+    font-size: 16px;
+
+    z-index: 100;
+}
+
+.sectioncontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    left: 80px;
+    margin-right: 120px;
+    margin-top: 80px;
+    
+}
+.section1{
+    border: solid 3px black;
+    width: 200px;
+    height: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+     background: linear-gradient(
+        #494646,#262627
+    );
+    transition: transform 0.2s ease-in-out;
+}
+
+#ring3{
+    position: relative;
+    top: 20px;
+    width: 210px;
+    height: 210px;
+}
+
+#s1price{
+    color:white;
+    font-family: "DOXENT", sans-serif;
+    position:relative;
+    top: 20px;
+}
+
+#s1name{
+    color:white;
+    font-family: "DOXENT", sans-serif;
+    position:relative;
+    top: 20px;
+}
+
+.section2{
+    
+    border: solid 3px black;
+    width: 200px;
+    height: 350px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+     background: linear-gradient(
+        #494646,#262627
+    );
+    transition: transform 0.2s ease-in-out;
+}
+
+#ring4{
+    position: relative;
+    top: 10px;
+    width: 210px;
+    height: 210px;
+}
+
+#s2price{
+    color:white;
+    font-family: "DOXENT", sans-serif;
+    position:relative;
+    top: 18px;
+}
+
+#s2name{
+    color:white;
+    font-family: "DOXENT", sans-serif;
+    position:relative;
+    top: 17px;
+}
+
+.section3{
+    border: solid 3px black;
+    width: 200px;
+    height: 350px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+     background: linear-gradient(
+        #494646,#262627
+    );
+    transition: transform 0.2s ease-in-out;
+}
+
+#ring5{
+    position: relative;
+    top: 10px;
+    width: 170px;
+    height: 170px;
+}
+
+#s3price{
+    color:white;
+    font-family: "DOXENT", sans-serif;
+    position:relative;
+    top: 41px;
+}
+
+#s3name{
+    color:white;
+    font-family: "DOXENT", sans-serif;
+    position:relative;
+    top: 38px;
+}
+
+.section4{
+    border: solid 3px black;    
+    width: 200px;
+    height: 350px;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+     background: linear-gradient(
+        #494646,#262627
+    );
+    transition: transform 0.2s ease-in-out;
+}
+
+#ring6{
+    position: relative;
+    top: 60px;
+    width: 190px;
+    height: 190px;
+    left: 4px;
+}
+
+
+#s4name{
+    color:white;
+    font-family: "DOXENT", sans-serif;
+    position:relative;
+    top: 75px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#s4price{
+    color:white;
+    font-family: "DOXENT", sans-serif;
+    position:relative;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section5{
+    border: solid 3px black;
+    width: 200px;
+    height: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+     background: linear-gradient(
+       #494646,#262627
+    );
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ring7{
+    position: relative;
+    top: 60px;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+#s5name{
+    color:white;
+    font-family: "DOXENT", sans-serif;
+    position:relative;
+    top: 40px; 
+    left: 45px;
+    display: flex;
+    flex-direction:column;
+}
+
+#s5price{
+    color:white;
+    font-family: "DOXENT", sans-serif;
+    position:relative;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section5:hover {
+    transform: scale(1.08);
+}
+
+.section4:hover {
+    transform: scale(1.08);
+}
+.section3:hover {
+    transform: scale(1.08);
+}
+.section2:hover {
+    transform: scale(1.08);
+}
+.section1:hover {
+    transform: scale(1.08);
+}
+.aside:hover {
+    transform: scale(1.08);
+}
+
+
+
+
+
+
+
+
